@@ -4,7 +4,7 @@ public class Numconverter {
 	public static int myAtoi(String s) {
 		int i =0;
 		int n=s.length();
-		if(s==null || s.equals("")) return 0;
+		if(s==null || "".equals(s)) return 0;
 		while( i<n&&s.charAt(i)==' ' ) {
 			i++;
 		}

@@ -43,7 +43,7 @@ public class LastViewInsert {
 		int countView=0;
 		for (int i=0;i<operations.size();i++) {
 			
-			if(operations.get(i).operationType.equals("INSERT")) {
+			if("INSERT".equals(operations.get(i).operationType)) {
 				Item item = new Item("",operations.get(i).name,operations.get(i).cost);
 				ma.add(item);
 				countInsert++;
